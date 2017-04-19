@@ -1,21 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package animals;
 
-/**
- *
- * @author 2016103732
- */
-public class Animals {
+import bichos.bichos;
+import bichos.cachorro;
+import bichos.gato;
 
-    /**
-     * @param args the command line arguments
-     */
+public class Animals {
     public static void main(String[] args) {
-        // TODO code application logic here
+        bichos bicho = new bichos();
+        
+        bicho.Set("Floppy");
+        bicho.Set(1.0);
+        
+        bicho.Talk();
+        
+        cachorro dog = new cachorro();
+        
+        dog.Set(true);
+        
+        
+        System.out.println("Eu sou um cachorro: " + dog.GetBehaviour());
+        
+        
     }
     
 }
